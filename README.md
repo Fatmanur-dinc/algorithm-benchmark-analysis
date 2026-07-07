@@ -25,3 +25,44 @@ ALGO/
 ├── analysis/         # Complexity verification and statistical processing
 ├── data/             # Test datasets and configurations
 └── report/           # Automated markdown and data export tools
+
+🛠️ Tech Stack & Dependencies
+Core: Python 3.8+
+
+GUI Framework: [Kullandığın GUI kütüphanesini yaz, örn: Tkinter / PyQt5 / CustomTkinter]
+
+Data & Visualization: Matplotlib, NumPy, [Varsa Pandas]
+
+Static Analysis: Pyright
+
+⚡ Quick Start
+Prerequisites
+Ensure you have Python installed, then clone the repository:
+git clone [https://github.com/Fatmanur-dinc/algorithm-benchmark-analysis.git](https://github.com/Fatmanur-dinc/algorithm-benchmark-analysis.git)
+cd algorithm-benchmark-analysis
+
+Installation
+Set up a virtual environment and install the required dependencies:
+python -m venv .venv
+source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
+pip install -r requirements.txt
+
+Run the Application
+python main.py
+
+📚 Documentation & Deep Dives
+This project includes highly detailed analysis and architectural documentation. Explore the links below for a comprehensive technical breakdown:
+
+📖 Project Analysis & Overview - General concepts and design goals.
+
+⚙️ Technical Details - Under-the-hood implementation and system design.
+
+📈 Sorting Algorithms Analysis - Execution metrics and comparisons for specific sorting strategies.
+
+🧪 AI Explanations - Algorithmic theory, complexities, and insights.
+
+🧭 Quick Start Guide - Detailed usage instructions.
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
