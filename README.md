@@ -1,76 +1,27 @@
-# Sorting Algorithm Performance Benchmark System
+# 📊 Algorithm Benchmark Analysis & Visualizer
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-## 🎯 Proje Amacı
+A comprehensive, interactive Python application designed to benchmark, analyze, and visualize the performance of various core algorithms. Featuring a custom Graphical User Interface (GUI), this tool provides real-time execution insights, time complexity analysis, and automated reporting.
 
-Bu proje, 5 temel sıralama algoritmasının (Quick, Merge, Heap, Shell, Radix) teorik karmaşıklıklarını pratik performans ölçümleriyle karşılaştıran bir analiz platformudur. **Big-O notasyonunun** gerçek dünya verileri (Random, Reverse, Partial) üzerindeki yansımalarını analiz eder.
+## 🚀 Key Features
 
-## 🚀 Özellikler
+- **Multi-Algorithm Benchmarking:** Compare sorting, searching, and custom algorithms side-by-side under identical execution environments.
+- **Interactive GUI:** User-friendly interface built for configuring dataset sizes, types (random, sorted, reversed), and iteration counts dynamically.
+- **Live Visualizations:** Real-time plotting of time complexity, comparisons, and algorithmic behaviors.
+- **Deep Technical Reports:** Automatically generates structured performance analyses, memory usage overviews, and execution summaries.
 
-- **Hybrid Quick Sort:** Küçük veri setlerinde Insertion Sort'a geçen optimize edilmiş yapı.
+## 📁 Project Architecture
 
-- **Knuth Shell Sort:** $O(n^{1.5})$ karmaşıklığı için Knuth Sequence kullanımı.
-
-- **Memory Efficient Merge Sort:** Slicing yerine indeks tabanlı bellek yönetimi.
-
-- **Robust Radix Sort:** Negatif sayıları destekleyen özel implementasyon.
-
-- **Gerçek Zamanlı Analiz:** `tracemalloc` ve `time.perf_counter` ile mikrosaniye hassasiyetinde ölçüm.
-
-## 📊 Benchmark Metodolojisi
-
-Sistem aşağıdaki parametrelerde stres testi uygular:
-
-| Parametre | Değerler |
-|-----------|----------|
-| **Veri Boyutu** | 1.000, 10.000, 100.000 |
-| **Veri Tipi** | Random, Reverse Sorted, Partially Sorted |
-| **Tekrar Sayısı** | Her test için 3 koşum ortalaması (Noise reduction) |
-
-## 🛠 Kurulum ve Çalıştırma
-
-> 💡 **Hızlı Başlangıç:** Detaylı adım adım kılavuz için `QUICK_START.md` dosyasına bakın.
-
-1. **Virtual Environment Oluşturun (Önerilen):**
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # macOS/Linux
-   # veya
-   venv\Scripts\activate  # Windows
-   ```
-
-2. **Bağımlılıkları Yükleyin:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Benchmark'ı Başlatın (Backend):**
-
-   ```bash
-   python main.py
-   ```
-
-   Sonuçlar `results/` klasörüne CSV olarak kaydedilir.
-
-4. **Arayüzü Açın (GUI):**
-
-   ```bash
-   python gui/app.py
-   ```
-
-**Not:** macOS'ta Homebrew Python (`/opt/homebrew/bin/python3`) kullanıyorsanız, tkinter desteği için sistem Python'unu (`/usr/local/bin/python3`) kullanmanız önerilir.
-
-## 📈 Sonuçlar (Özet)
-
-- **Hız Şampiyonu:** Radix Sort (Integer verilerde).
-- **Stabilite:** Merge Sort (Her senaryoda tutarlı).
-- **Bellek Verimliliği:** Iterative Heap Sort.
-
----
-
-**Geliştirici:** Berna | Computer Engineering Senior Student
-
+```text
+ALGO/
+│
+├── algorithms/       # Core algorithmic implementations (Sorting, Searching, etc.)
+├── benchmark/        # Performance evaluation and metrics collection engines
+├── gui/              # User interface components and windows
+├── visualization/    # Charting, plotting, and real-time animation modules
+├── analysis/         # Complexity verification and statistical processing
+├── data/             # Test datasets and configurations
+└── report/           # Automated markdown and data export tools
