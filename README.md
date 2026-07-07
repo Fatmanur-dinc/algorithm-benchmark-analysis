@@ -26,14 +26,12 @@ ALGO/
 ├── data/             # Test datasets and configurations
 └── report/           # Automated markdown and data export tools
 
-🛠️ Tech Stack & Dependencies
-Core: Python 3.8+
+## 🛠️ Tech Stack & Dependencies
 
-GUI Framework: [Kullandığın GUI kütüphanesini yaz, örn: Tkinter / PyQt5 / CustomTkinter]
-
-Data & Visualization: Matplotlib, NumPy, [Varsa Pandas]
-
-Static Analysis: Pyright
+- **Core:** Python 3.8+
+- **GUI Framework:** CustomTkinter (Modern Tkinter extension)
+- **Data & Visualization:** Matplotlib, NumPy, Pandas
+- **Static Analysis:** Pyright
 
 ⚡ Quick Start
 Prerequisites
